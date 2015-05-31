@@ -1,5 +1,5 @@
 # websocket-sample
-Sample Coldbox app that demonstrates the use of websockets for server side real time debug info on the client, among other things
+Sample Coldbox app that demonstrates the use of websockets for server side real time debug info on the client, among other things.
 
 **Pre-requisites**
 
@@ -57,7 +57,6 @@ Sample Coldbox app that demonstrates the use of websockets for server side real 
 5. From there, set up the site on Tomcat, etc. depending on your environment. Make sure the index file is set to index.cfm.
 
 6. Open the site in a browser. 
-
 
 **What It Is**
 
