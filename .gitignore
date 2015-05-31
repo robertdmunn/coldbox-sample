@@ -1,4 +1,5 @@
 WEB-INF
 .DS_Store
 coldbox
+javaloader
 bower_components

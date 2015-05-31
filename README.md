@@ -17,9 +17,9 @@ Sample Coldbox app that demonstrates the use of websockets for server side real 
 
 2. From the command line, go to the root of the application and type:
 
-    bower update
+   bower update
 
-Doing so will install the JavaScript components required for the application.
+   Doing so will install the JavaScript components required for the application.
 
 3. Install Coldbox (www.coldbox.org). This application has been tested on Coldbox 3.7.0. 
 
@@ -28,6 +28,22 @@ Doing so will install the JavaScript components required for the application.
 4. Install JavaLoader. You can download it from RIA Forge (http://javaloader.riaforge.org/index.cfm?event=action.download). 
    
    Unzip the package and copy the javaloader folder inside the root folder into your application root.
+
+   When you are done, your project root folder should look like this:
+   
+   /
+   /bower_components
+   /coldbox (unless you mapped coldbox to another folder)
+   /config
+   /handlers
+   /includes
+   /interceptors
+   /javaloader (unless you mapped coldbox to another folder)
+   /layouts
+   /logs
+   /model
+   /views
+
 
 5. From there, set up the site on Tomcat, etc. depending on your environment. Make sure the index file is set to index.cfm.
 
