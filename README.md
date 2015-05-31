@@ -8,10 +8,10 @@ Sample Coldbox app that demonstrates the use of websockets for server side real 
 - npm 
 - Git
 - Bower (bower.io)
-
+- Coldbox (www.coldbox.org)
+- JavaLoader (https://github.com/markmandel/JavaLoader)
 
 **Installation**
-
 
 1. Download the application zip file and extract it or "git clone" into the directory of your choice.
 
@@ -28,6 +28,7 @@ Download the Coldbox package and put the coldbox folder inside the application r
 4. From there, set up the site on Tomcat, etc. depending on your environment. Make sure the index file is set to index.cfm.
 
 5. Open the site in a browser. 
+
 
 **What It Is**
 
