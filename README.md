@@ -31,17 +31,26 @@ Sample Coldbox app that demonstrates the use of websockets for server side real 
 
    When you are done, your project root folder should look like this:
    
-   /
    /bower_components
+   
    /coldbox (unless you mapped coldbox to another folder)
+   
    /config
+   
    /handlers
+   
    /includes
+   
    /interceptors
+   
    /javaloader (unless you mapped coldbox to another folder)
+   
    /layouts
+   
    /logs
+   
    /model
+   
    /views
 
 
