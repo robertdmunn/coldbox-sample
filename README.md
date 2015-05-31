@@ -37,4 +37,6 @@ The application uses a technology stack including JavaScript (jQuery, jQuery UI 
 
 You can apply the principles in the application to any server technology. The easiest way to implement the ideas is to leverage an application logging library ( Logbox in this case ) that allows you to define custom appenders for logging output.
 
-The application itself does very little. It allows you to login ( hint - username : "user", password : "password" ) and logout. While you are logged in, the client application will refresh the session state with the server every 60 seconds so you can see something happening in the debug window without waiting too long. Because it is using Coldbox, the application will also show Coldbox system logging in its debug window. being able to show events that are happening in the background rather than in response to a specific request can be very useful when you are trying to debug problems with background processes.
+The application itself does very little. It allows you to login ( hint - username : "user", password : "password" ) and logout. 
+While you are logged in, the client application will refresh the session state with the server every 60 seconds so you can see something happening in the debug window without waiting too long. 
+Because it is using Coldbox, the application will also show Coldbox system logging in its debug window. Being able to show events that are happening in the background rather than in response to a specific request can be very useful when you are trying to debug problems with background processes.
