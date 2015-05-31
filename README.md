@@ -1,16 +1,17 @@
 # websocket-sample
 Sample Coldbox app that demonstrates the use of websockets for server side real time debug info on the client, among other things
 
+**Pre-requisites**
+
+- CFML Server - Tested on Lucee 4.5.1 (www.lucee.org) on Tomcat 7 (tomcat.apache.org).
+- NodeJS (nodejs.org)
+- npm 
+- Git
+- Bower (bower.io)
+
+
 **Installation**
 
-Pre-requisites
---------------
-
-CFML Server - Tested on Lucee 4.5.1 (www.lucee.org) on Tomcat 7 (tomcat.apache.org).
-NodeJS (nodejs.org)
-npm 
-Git
-Bower (bower.io)
 
 1. Download the application zip file and extract it or "git clone" into the directory of your choice.
 
