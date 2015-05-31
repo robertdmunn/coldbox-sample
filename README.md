@@ -29,13 +29,15 @@ Download the Coldbox package and put the coldbox folder inside the application r
 
 5. Open the site in a browser. 
 
-**What It Does**
+**What It Is**
 
 This is a sample application that demonstrates, among other things, how to display server-side debug information in your client application using web sockets.
 
 The application uses a technology stack including JavaScript (jQuery, jQuery UI among other things), CFML ( Lucee Server on Tomcat in my demo ), Coldbox, Logbox and a couple of Java components for the web socket functionality.
 
 You can apply the principles in the application to any server technology. The easiest way to implement the ideas is to leverage an application logging library ( Logbox in this case ) that allows you to define custom appenders for logging output.
+
+**What It Does**
 
 The application itself does very little. It allows you to login ( hint - username : "user", password : "password" ) and logout. 
 While you are logged in, the client application will refresh the session state with the server every 60 seconds so you can see something happening in the debug window without waiting too long. 
