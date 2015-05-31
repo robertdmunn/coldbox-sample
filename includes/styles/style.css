@@ -1,0 +1,17 @@
+#debugDiv {
+    width: 50%;
+    height: 300px;
+    right: 1em;
+    top: 1em;
+    overflow: scroll;
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
+
+#main div{
+	padding: .5em;
+}
+
+div[name='loginStatus']{
+	display:none;
+}
