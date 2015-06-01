@@ -69,5 +69,14 @@ You can apply the principles in the application to any server technology. The ea
 **What It Does**
 
 The application itself does very little at the moment. It allows you to login ( hint - username : "user", password : "password" ) and logout. 
-While you are logged in, the client application will refresh the session state with the server every 60 seconds so you can see something happening in the debug window without waiting too long. 
+While you are logged in, the client application will refresh the session state with the server every 10 seconds so you can see something happening in the debug window without waiting too long. 
+
+	You can change this setting in /includes/javascript/init.js:
+
+	app.getToken = setTimeout( function( ) {
+	
+	$.publish( "user.refresh" );
+	
+	}, 10000 );
+
 Because it is using Coldbox, the application will also show Coldbox system logging in its debug window. Being able to show events that are happening in the background rather than in response to a specific request can be very useful when you are trying to debug problems with background processes.

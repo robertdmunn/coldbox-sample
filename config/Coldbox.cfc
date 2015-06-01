@@ -44,7 +44,7 @@ Optional Methods
 		// coldbox directives
 		coldbox = {
 			//Application Setup
-			appName 				= "Websocket-sample",
+			appName 				= "Coldboxing",
 			eventName 				= "event",
 
 			//Development Settings
@@ -84,7 +84,8 @@ Optional Methods
 			proxyReturnCollection 	= false,
 
 			// custom settings
-			debugPort = 8880
+			debugPort = 8880,
+			secretKey = GenerateSecretKey( "AES" )
 		};
 
 		// custom settings
