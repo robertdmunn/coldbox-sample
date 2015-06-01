@@ -73,7 +73,7 @@ You can apply the principles in the application to any server technology. The ea
 The application itself does very little at the moment. It allows you to login ( hint - username : "user", password : "password" ) and logout. 
 While you are logged in, the client application will refresh the session state with the server every 10 seconds so you can see something happening in the debug window without waiting too long. 
 
-	You can change this setting in /includes/javascript/init.js:
+You can change this setting in /includes/javascript/init.js:
 
 	app.getToken = setTimeout( function( ) {
 	
