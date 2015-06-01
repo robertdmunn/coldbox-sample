@@ -56,11 +56,13 @@ Sample Coldbox app that demonstrates the use of websockets for server side real 
 
 5. From there, set up the site on Tomcat, etc. depending on your environment. Make sure the index file is set to index.cfm.
 
+   The Coldbox config is set to use dev settings for any hostname that ends in .home (e.g. coldboxing.home ).
+
 6. Open the site in a browser. 
 
 **What It Is**
 
-This is a sample application that demonstrates, among other things, how to display server-side debug information in your client application using web sockets.
+Coldboxing is a sample application that demonstrates, among other things, how to display server-side debug information in your client application using web sockets.
 
 The application uses a technology stack including JavaScript (jQuery, jQuery UI among other things), CFML ( Lucee Server on Tomcat in my demo ), Coldbox, Logbox and a couple of Java components for the web socket functionality.
 
