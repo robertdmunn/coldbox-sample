@@ -42,9 +42,9 @@
 
 	<cffunction name="setUser" access="public" output="false" returntype="void">
 		<cfargument name="user" required="yes" type="struct" hint="">
-
-		<cfset request.user = arguments.user>
-
+		<cfscript>
+			request.user = arguments.user;
+		</cfscript>
 	</cffunction>
 
 	<cffunction name="setValidated" access="public" returntype="void">

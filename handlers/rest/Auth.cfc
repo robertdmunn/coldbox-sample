@@ -34,8 +34,7 @@ component extends="coldbox.system.EventHandler" {
 		}
 		else{
 			log.info( "Checking user login ..." );
-			// actual auth is done in /interceptors/HTTPSecurity
-			prc.response.data = UserService.getUser( username = request.user.username );
+
 			if( prc.response.data eq false ){
 				log.error( "Authentication failed." );
 			}

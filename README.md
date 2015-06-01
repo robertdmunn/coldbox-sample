@@ -1,4 +1,4 @@
-# coldboxing
+# Coldboxing
 Sample Coldbox app that demonstrates the use of websockets for server side real time debug info on the client, among other things.
 
 **Pre-requisites**
@@ -26,31 +26,31 @@ Sample Coldbox app that demonstrates the use of websockets for server side real 
    Download the Coldbox package and put the coldbox folder inside the application root. You need coldbox/system, but not the docs or examples, to get the app to run.
 
 4. Install JavaLoader. You can download it from RIA Forge (http://javaloader.riaforge.org/index.cfm?event=action.download). 
-   
+
    Unzip the package and copy the javaloader folder inside the root folder into your application root.
 
    When you are done, your project root folder should look like this:
-   
+
    /bower_components
-   
+
    /coldbox (unless you mapped coldbox to another folder)
-   
+
    /config
-   
+
    /handlers
-   
+
    /includes
-   
+
    /interceptors
-   
+
    /javaloader (unless you mapped coldbox to another folder)
-   
+
    /layouts
-   
+
    /logs
-   
+
    /model
-   
+
    /views
 
 

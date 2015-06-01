@@ -14,11 +14,14 @@
 	</cffunction>
 
 
-	<cffunction name="getUser" access="public" returntype="boolean">
+	<cffunction name="getUser" access="public" returntype="struct">
 		<cfargument name="username" type="string" required="true" />
 
-		<cfset log.info( " Retrieving username ... " ) />
-
-		<cfreturn arguments.username eq "user" />
+		<cfset log.info( " Retrieving user ... " ) />
+		<cfif arguments.username eq "user">
+			<cfreturn {username: "user" } />
+		<cfelse>
+			<cfthrow message="User: #arguments.username# not found."/>
+		</cfif>
 	</cffunction>
 </cfcomponent>

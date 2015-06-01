@@ -11,22 +11,32 @@ $( document ).ready( function() {
 
 			if( minutes > 30 ){
 				$.publish( "user.logout" );
+			}else if( app.model.get( "authToken" ) !== undefined ){
+				xhr.setRequestHeader ( "X-AuthToken", app.model.get( "authToken" ) );
 			}
+
 			// this function keeps your session alive while
 			// you are on the page and your computer is
 			// active
-			if ( typeof getToken !== "undefined" ) {
-				clearTimeout( getToken );
+			if ( app.getToken !== undefined ) {
+				clearTimeout( app.getToken );
+				app.getToken = undefined;
 			}
 
-			xhr.then( function( ) {
-				if ( app.model.get( "user.username" ) === 'user' ) {
+			xhr.then( function( data, status, jqXHR ) {
+/*					var authToken = jqXHR.getResponseHeader( "X-AuthToken" );
+				if( authToken !== undefined ){
+					app.model.set( "authToken", authToken );
+				}
+				
+				
+				if ( app.model.get( "user.username" ).length > 0 ) {
 					if ( typeof getToken === "undefined" ) {
 						getToken = setTimeout( function( ) {
 						$.publish( "user.refresh" );
 						}, 60000 );
 					}
-				}
+				}	*/
 			});
 			app.time = currentTime;
 		},
@@ -36,6 +46,19 @@ $( document ).ready( function() {
 				response = JSON.parse( xhr.responseText );
 			}catch( e ){
 				response = { ERROR : false, MESSAGES: "" };
+			}
+
+			var authToken = xhr.getResponseHeader( "X-AuthToken" );
+			if( authToken !== undefined ){
+				app.model.set( "authToken", authToken );
+			}
+			
+			if ( app.model.get( "user.username" ).length > 0 ) {
+				if ( app.getToken === undefined ) {
+					app.getToken = setTimeout( function( ) {
+					$.publish( "user.refresh" );
+					}, 10000 );
+				}
 			}
 
 			if( xhr.state() === "resolved" && response.ERROR === true && response.MESSAGES.trim() === "Login failed" ){

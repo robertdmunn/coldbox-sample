@@ -19,7 +19,7 @@
 		<cfargument name="rc">
 		<cfargument name="prc">
 
-		<cfset rc.title = "Websocket Sample App "/>
+		<cfset rc.title = "Coldboxing "/>
 
 		<cfset event.setView("home")>
 	</cffunction>

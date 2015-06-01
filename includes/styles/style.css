@@ -15,3 +15,7 @@
 div[name='loginStatus']{
 	display:none;
 }
+
+input{
+	font-size: 1em;
+}
