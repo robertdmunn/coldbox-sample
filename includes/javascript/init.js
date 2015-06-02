@@ -23,21 +23,6 @@ $( document ).ready( function() {
 				app.getToken = undefined;
 			}
 
-			xhr.then( function( data, status, jqXHR ) {
-/*					var authToken = jqXHR.getResponseHeader( "X-AuthToken" );
-				if( authToken !== undefined ){
-					app.model.set( "authToken", authToken );
-				}
-				
-				
-				if ( app.model.get( "user.username" ).length > 0 ) {
-					if ( typeof getToken === "undefined" ) {
-						getToken = setTimeout( function( ) {
-						$.publish( "user.refresh" );
-						}, 60000 );
-					}
-				}	*/
-			});
 			app.time = currentTime;
 		},
 		complete : function( xhr, status ) {
